@@ -1,0 +1,34 @@
+/* Small Screen */
+.new-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+  align-items: center;
+}
+
+/* Medium Screen */
+@media screen and (min-width: 768px) {
+  .new-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .tambah {
+    padding: 4rem;
+    background-color: #0a67d8;
+    color: #fff;
+    border: none;
+    margin-left: 2rem;
+    margin-bottom: 15rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .new-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .new-container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
